@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+    
+}
+
+/*Navbar CSS*/
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 80px;
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+.unit{
+    background-color: #ECECED;
+    padding: 3px 0;
+    border-radius: 6px;
+    margin: 5px 30px;
+    display: flex;
+}
+
+.unit button{
+    font-size: 11px;
+    cursor: pointer;
+    padding: 5px 9px;
+    border: none;
+    background: none;
+    margin: 0 7px;
+    border-radius: 6px;
+}
+
+.unit button:focus{
+    background-color: white;
+}
+
+form{
+    display: flex;
+    margin: 0 30px;
+}
+
+input[type="text"]{
+    border: 1px solid #ececed;
+    border-radius: 4pt;
+    padding: 4pt 8pt;
+    color: #48484a;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    width: 400px;
+    border-radius: 4pt 0 0 4pt;
+    height: 24pt;
+}
+
+input[type="submit"]{
+    background-color: #48484a;
+    color: #f2f2f2;
+    padding: 6pt 8pt;
+    cursor: pointer;
+    border-radius: 0 4pt 4pt 0;
+    padding: 0 8pt;
+    height: 24pt;
+    border: none;
+    width: 90px;
+}
+/*Navbar CSS*/
+
+.flex{
+    display: flex;
+}
+
+/* Container CSS */
+#container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.city-box{
+    margin-bottom: 20px;
+}
+
+.city-box h2{
+    font-weight: 700;
+    color: #48484a;
+    display: inline;
+}
+
+.feels span{
+    font-weight: 700;
+    color: #48484a;
+}
+
+.feels{
+    margin-bottom: 0.5rem;
+}
+
+.info-box{
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 1px solid #eb6e4b;
+    color: #48484a;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.info-box img{
+    width: 10px;
+}
+
+.info-box div:first-child > img{
+    transform: rotate(310deg);
+}
+
+.info-box div{
+    margin: 5px 5px;
+}
+
+#temp{
+    font-size: 36px;
+    font-weight: 100;
+    margin-left: 8pt;
+    font-weight: 500;
+}
+/* Container CSS */
+
+/* Loading CSS */
+#loader{
+    width: 100px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    z-index: 1;
+}
+/* Loading CSS */
+
+/* Error CSS */
+.error{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    margin-top: 8rem;
+    display: none;
+}
+
+.error h1{
+    font-size: 80px;
+}
+
+.error p{
+    font-size: 30px;
+}
+/* Error CSS */
+
+
+/* Forecast CSS */
+#forecastMain{
+    margin: auto;
+    margin-top: -220px;
+    width: 70%;
+}
+
+#forecastCont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#forecastCont > div{
+    width: 100px;
+    border: 2px solid #ff4c1a;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#forecastCont > div p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#forecastCont h4{
+    margin-bottom: 3px;
+}
+/* Forecast CSS */
+
+/* Responsive CSS */
+@media all and (min-width: 480px) and (max-width: 780px){
+    nav{
+        flex-direction: column;
+    }
+
+    
+}
+
+@media all and (min-width: 320px) and (max-width: 480px){
+    nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+/* Responsive CSS */

@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>Weather App</title>
+    <style>
+        .mapouter{
+            text-align:right;
+            height:500px;
+            width:600px;
+        }
+
+        .gmap_canvas {
+            overflow:hidden;
+            height:500px;
+            width:600px;
+        }
+
+    </style>
+</head>
+<body onload="getLocation()">
+    <nav>
+        <div class="unit">
+            <button id="metric">Metric: °C, m/s</button>
+            <button id="imperial">Imperial: °F, mph</button>
+        </div>
+        <form action="">
+            <input type="text" id="city" placeholder="Search City">
+            <input type="submit" value="Search">
+        </form>
+    </nav>
+    <img id="loader" src="https://i.gifer.com/origin/f5/f5baef4b6b6677020ab8d091ef78a3bc_w200.webp" alt="">
+    <div class="error">
+        <h1></h1>
+        <p></p>
+    </div>
+    <section id="container">
+        <div>
+            <div class="city-box">
+                <h2 id="area"></h2>
+                <h2 id="country"></h2>
+            </div>
+            <div class="temp">
+                <div class="flex">
+                    <div id="icon">
+                        <img id="wdicon" src="" alt="weather-icon">
+                    </div>
+                    <span id="temp"></span>
+                </div>
+                <div class="feels">
+                    <span id="bio"></span>
+                </div>
+                <div class="info-box">
+                    <div id="windspeed"></div>
+                    <div id="pressure"></div>
+                    <div id="humidity"></div>
+                    <div id="uv"></div>
+                    <div id="dewpoint"></div>
+                    <div id="visibility"></div>
+                </div>
+            </div>
+        </div>
+        <div class="map-box">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="550" height="230" id="gmap_canvas" src="https://maps.google.com/maps?q=sangli&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="forecastMain">
+        <h2>Forecast for the week</h2>
+        <div id="forecastCont">
+
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./Script/index.js"></script>
+
+<script>
+    
+</script>
